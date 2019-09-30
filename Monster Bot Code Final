@@ -1,0 +1,52 @@
+int right = 8;
+int left = 2;
+
+  #include <Servo.h>
+
+Servo tongue;  
+
+void setup() {
+tongue.attach(6);
+pinMode(right, OUTPUT);
+pinMode(left, OUTPUT);
+ 
+}
+
+void loop() {
+tongue.write(0);
+delay(100);
+tongue.write(40);
+delay(100);
+tongue.write(320);
+delay(100);
+digitalWrite(right, HIGH);
+delay(100);
+digitalWrite(right, LOW);
+delay(100);
+digitalWrite(left, HIGH);
+delay(100);
+digitalWrite(left, LOW);
+delay(100);
+digitalWrite(right, HIGH);
+delay(100);
+digitalWrite(right, LOW);
+delay(100);
+digitalWrite(left, HIGH);
+delay(100);
+digitalWrite(left, LOW);
+delay(100);
+digitalWrite(right, HIGH);
+digitalWrite(left, HIGH);
+delay(100);
+digitalWrite(right, LOW);
+digitalWrite(left, LOW);
+delay(100);
+digitalWrite(right, HIGH);
+digitalWrite(left, HIGH);
+delay(100);
+digitalWrite(right, LOW);
+digitalWrite(left, LOW);
+delay(100);
+
+
+}
